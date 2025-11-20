@@ -15,10 +15,7 @@ Power BI analytics dashboards
 Screenshots (Azure portal and pgAdmin )
 
 Tech Stack: 
-
- Azure PostgreSQL     Flexible Server - Cloud database.
-
-
+Azure PostgreSQL Flexible Server - Cloud database.
 Python (psycopg2, Faker, python-dotenv) - Programming
 
 PostgreSQL, Normalization (3NF) - Data Modeling
@@ -141,7 +138,14 @@ Using the Azure cloud database, I built dashboards answering the key business qu
 ![alt text](image-6.png)
 (g) Store table
 ![alt text](image-7.png)
+
+
+### Key Challenge:
+ Azure Networking and Firewall.
+ The biggest challenge was connecting to Azure PostgreSQL from Python and pgAdmin. Azure blocks ALL external connections by default.
+Python/Faker scripts failed due to firewall restrictions.
  
+ I resolved by configuring public access, and whitelisting allow IP.
  In conclusion, this project demonstrates:
 
  Professional data modeling (3NF)
