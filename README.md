@@ -1,8 +1,10 @@
 ## RushMore Pizzeria Enterprise Database System (Azure postgreSQL + python + powerBI)
 ### Project Overview
 
-RushMore Pizzeria started with a simple Python ordering system using a JSON file as storage. As the business expanded to multiple locations with thousands of customers, JSON became Slow, Prone to corruption,Not scalable, Impossible to query, Not multi-user.
-To solve this, I migrated RushMore Pizzeria to a fully-designed PostgreSQL enterprise database deployed in Microsoft Azure, and populated it with 10,000+ rows of realistic, synthetic business data using Python, Faker, and psycopg2, for testing and analysis.
+RushMore Pizzeria originally operated using a simple Python ordering app backed by a single JSON file. While this worked for early prototypes, the business soon expanded into multiple locations, thousands of customers, and fast-growing order volume. At that point, JSON became a bottleneck—slow, fragile, and impossible to query or share across users.
+
+To support RushMore’s growth, I engineered a complete migration from JSON storage to a full enterprise-grade PostgreSQL database deployed on Microsoft Azure. I also generated 10,000+ realistic synthetic records using Python (Faker + psycopg2) to populate the system with production-ready test data.
+Finally, I connected Azure PostgreSQL to Power BI to build interactive dashboards that answer real business questions across sales, customers, inventory, and store performance.
 
 This README provides:
 
@@ -146,13 +148,24 @@ Using the Azure cloud database, I built dashboards answering the key business qu
 Python/Faker scripts failed due to firewall restrictions.
  
  I resolved by configuring public access, and whitelisting allow IP.
- In conclusion, this project demonstrates:
+ 
+ 
+ In conclusion,this project showcases a complete transformation of RushMore Pizzeria’s operations from a single-file prototype into a cloud-ready, analytics-powered enterprise system.
 
- Professional data modeling (3NF)
- Cloud database deployment (Azure PostgreSQL)
-Python Data Engineering with Faker + psycopg2
-Foreign key–safe data insertion
-Real-world BI dashboards (Power BI)
-Scalable enterprise-grade design.
+By migrating to Azure PostgreSQL, implementing a fully normalized database design, and automating data generation with Python, RushMore now has a scalable backend suitable for multi-store, high-volume operations. Connecting the cloud database to Power BI further enables real-time insights across sales, customers, inventory, and store performance.
 
-It transforms RushMore Pizzeria from a simple JSON-based prototype into a full enterprise analytics-ready system.
+Overall, this project demonstrates practical experience in:
+
+Cloud database deployment
+
+Production-level relational modeling
+
+Secure connectivity & SSL configuration
+
+Python-based ETL/data automation
+
+BI dashboard design
+
+Enterprise system architecture
+
+It reflects the technical depth, problem-solving ability, and end-to-end engineering mindset expected of a modern Data Engineer.
