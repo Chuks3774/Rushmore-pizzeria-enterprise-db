@@ -47,6 +47,8 @@ city
 phone_number
 
 opened_at
+```
+```sql
 
 2️⃣ Customers
 
@@ -59,6 +61,8 @@ email
 phone_number
 
 created_at
+```
+```sql
 
 3️⃣ Ingredients
 
@@ -69,6 +73,8 @@ name
 stock_quantity
 
 unit
+```
+```sql
 
 4️⃣ Menu_Items
 
@@ -81,6 +87,8 @@ category
 size
 
 price
+```
+```sql
 
 5️⃣ Item_Ingredients (composite PK)
 
@@ -89,6 +97,8 @@ item_id (FK)
 ingredient_id (FK)
 
 quantity_required
+```
+```sql
 
 6️⃣ Orders
 
@@ -101,6 +111,8 @@ store_id (FK)
 order_timestamp
 
 total_amount
+```
+```sql
 
 status
 
