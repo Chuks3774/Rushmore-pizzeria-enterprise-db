@@ -35,6 +35,7 @@ Version Control - 	Git + GitHub
 ## Rushmore ERD
 
 ## Database Schema Summary
+```sql
 1️⃣ Stores
 
 store_id (PK)
@@ -114,6 +115,7 @@ item_id (FK)
 quantity
 
 price_at_time_of_order.
+```
 
 ### Analytics Dashboards (Power BI)
 
